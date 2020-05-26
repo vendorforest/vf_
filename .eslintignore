@@ -1,0 +1,8 @@
+__tests__
+node_modules
+scripts
+dist
+build
+types
+src/public
+config

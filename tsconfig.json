@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": "src",
+    "paths": {
+      "@*": ["*"],
+      "@Components/*": ["lib/Components/*"],
+      "@Sass/*": ["lib/Components/sass/*"],
+      "@Shared/*": ["lib/*"],
+      "@Controllers/*": ["server/Controllers/*"],
+      "@Models/*": ["server/models/*"],
+      "@Routes/*": ["server/routes/*"],
+      "@Utils/*": ["server/utils/*"],
+      "@Config/*": ["server/Config/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "checkJs": true,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "allowJs": true
+  },
+  "include": ["src", "declarations.d.ts", "public/mail.js"],
+  "exclude": ["scripts", "config"]
+}

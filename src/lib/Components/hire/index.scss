@@ -1,0 +1,132 @@
+.find-vendor{
+    padding-top: 70px;
+    position: relative;
+    min-height: 100vh;
+    .content{
+        .justify {
+            h6 {
+                font-weight: bolder;
+            }
+        }
+        position: relative;
+        margin: 2% 0 50px 0;
+        @media screen and (max-width:768px){
+            margin: 100px 0 30px 0;
+        }
+    }
+}
+
+.content-details{
+    .head{
+        background-color: #f8f8f8;
+        padding: 20px;
+        .user{
+            display: flex;
+            .photo{
+                margin-right: 10px;
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .job-progress{
+            width: 200px;
+            .ant-progress-inner{
+                background-color: #d5d4d4;
+            }
+        }
+        // .status{
+        //     .button-primary, .button-white{
+        //         margin-bottom: 10px;
+        //         @media screen and (max-width: 768px){
+        //             width: 100%;    
+        //         }
+        //         width: 150px;
+        //         height: 35px;
+        //         border-radius: 0;
+        //         line-height: 35px;
+        //     }
+        // }
+    }
+
+}
+
+.main-content {
+    padding: 20px;
+    .box {
+        margin: 0px;
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            float: left;
+        }
+        .edit {
+            color: #07b107!important;
+            float: right;
+            cursor: pointer;
+        }
+    .content {
+        margin: 3% 0px;
+    }
+    }
+}
+.d-block {
+    color: black!important;
+}
+
+.milestone-list-content{
+    .add-milestone{
+        label{
+            margin-bottom: 0;
+        }
+        .ms-descrption, .ms-price{
+            flex-grow: 1;
+            .ant-form-item{
+                margin: 0;
+            }
+            input{
+                height: 40px;
+            }
+        }
+    }
+    .milestone-list{
+
+    }
+    .button-primary{
+        height: 40px;
+        line-height: 40px;
+        width: 150px;
+        flex-grow: 0;
+        @media screen and (max-width:768px){
+            width: 100%;
+            flex-grow: 1;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: show;
+}
+.confirm_btn {
+    margin-right: 20px;
+    border-radius: 0;
+    color: rgb(255, 255, 255);
+}
+.cancel_btn {
+    margin-right: 20px;
+    border-radius: 0;
+    color: rgb(0, 0, 0);
+}
+.box1 {
+    padding-bottom: 20px;
+    color: black;
+    font-size: 16px;
+}
+.ant-popover {
+    margin: 20%;
+    @media screen and (max-width:768px){
+        margin: 0;
+    }
+}

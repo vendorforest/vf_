@@ -1,0 +1,116 @@
+#vendor-viewteam{
+    padding-top: 70px;
+    .content-wrap{
+        margin: 2% 0 50px 0;
+        min-height: 500px;
+        @media screen and (max-width:1200px){
+            margin-top: 100px;
+        }
+        .content{
+            .searchbar{
+                .ant-input-search{
+                    width: 400px;
+                    @media screen and (max-width:768px){
+                        width: 100%
+                    }
+                }
+            }
+            .member-list{
+                .member-item{
+                    .member-info{
+
+                    }
+                }
+            }
+            
+            .contract-list-content{
+                padding: 20px;
+                .pending-contract-item{
+                    .user{
+                        display: flex;
+                        .photo{
+                            margin-right: 10px;
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+                    .status{
+                        .job-progress{
+                            min-width: 150px;
+                            margin-bottom: 10px;
+                        }
+                        .button-primary, .button-white{
+                            margin-bottom: 10px;
+                            @media screen and (max-width: 768px){
+                                width: 100%;    
+                            }
+                            width: 150px;
+                            height: 35px;
+                            border-radius: 0;
+                            line-height: 35px;
+                        }
+                    }
+                }     
+                .past-contract-item{
+                    .user{
+                        display: flex;
+                        .photo{
+                            margin-right: 10px;
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+                    .rate{
+                        
+                    }
+                }                
+            }
+        }
+    }
+}
+
+.invite-vendor{
+    .add-btn{
+        button{
+            height: 40px;
+            line-height: 40px; 
+            margin-top: 28px;
+            @media screen and (max-width: 768px){
+                margin: 10px 0 !important;
+            }
+        }
+    }
+    .controls{
+        .button-primary{
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            width: 150px;
+            min-width: 150px;
+            flex-grow: 0;
+            @media screen and (max-width: 768px){
+                width: 50% !important;
+            }
+        }
+    }
+}
+
+.head{
+    background-color: #f8f8f8;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    @media screen and (max-width: 768px){
+        h4{
+            font-size: 17px;
+        }
+    }
+    .button-primary{
+        max-width: 150px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 0;
+    }
+}

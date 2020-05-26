@@ -1,0 +1,735 @@
+{
+    "services": [
+        {
+            "name": "Home",
+            "categories": [
+                {
+                    "name": "Additions & Remodels",
+                    "subCategories": [
+                        "Basement Finishing or Remodeling",
+                        "Bathroom Remodel",
+                        "Closet Remodel",
+                        "Deck or Porch Remodel or Addition",
+                        "Garage Addition or Remodel",
+                        "Home Modification for Accessibility",
+                        "Home Remodeling",
+                        "Kitchen Remodel",
+                        "Patio Remodel or Addition",
+                        "Railing Installation or Remodel",
+                        "Room Remodel",
+                        "Stair Installation, Remodel, or Repair"
+                    ]
+                },{
+                    "name": "Appliances",
+                    "subCategories": [
+                        "Appliance Installation",
+                        "Appliance Repair or Maintenance",
+                        "Dishwasher Installation",
+                        "Garbage Disposal Installation",
+                        "Garbage Disposal Repair",
+                        "Lawn Mower Repair",
+                        "Satellite Dish Services"
+                    ]
+                },{
+                    "name": "Architectural & Engineering Services",
+                    "subCategories" : [
+                        "Architectural Services",
+                        "Structural Engineering Services"
+                    ]
+                },{
+                    "name": "Carpentry & Woodworking",
+                    "subCategories": [
+                        "Cabinet Installation",
+                        "Cabinet Refinishing and Repair",
+                        "Cabinetry",
+                        "Custom Cabinet Building",
+                        "Custom Furniture Building",
+                        "Deck or Porch Repair",
+                        "Finish Carpentry",
+                        "Framing Carpentry",
+                        "General Carpentry",
+                        "Trim or Molding Installation"
+                    ]
+                },{
+                    "name": "Cleaning",
+                    "subCategories": [
+                        "Carpet Cleaning",
+                        "Commercial Carpet Cleaning",
+                        "Commercial Cleaning",
+                        "Dumpster Rental",
+                        "Floor Cleaning",
+                        "Garage, Basement or Attic Cleaning ",
+                        "Home Organizing",
+                        "House Cleaning",
+                        "Junk Removal",
+                        "Odor Removal",
+                        "Pressure Washing Roof Cleaning",
+                        "Rug Cleaning",
+                        "Solar Panel Cleaning",
+                        "Tile and Grout Cleaning",
+                        "Upholstery and Furniture Cleaning",
+                        "Water Damage Cleanup and Restoration Window Cleaning"
+                    ]
+                },{
+                    "name": "Concrete, Cement, & Asphalt",
+                    "subCategories": [
+                        "Asphalt Installation",
+                        "Asphalt Repair and Maintenance ",
+                        "Brick or Stone Repair",
+                        "Concrete Installation",
+                        "Concrete Removal",
+                        "Concrete Repair and Maintenance",
+                        "Masonry Construction Services",
+                        "Stucco Application",
+                        "Stucco Repair"
+                    ]
+                },{
+                    "name": "Countertop",
+                    "subCategories": [
+                        "Countertop Installation",
+                        "Countertop Repair or Maintenance"
+                    ]
+                },{
+                    "name": "Design & Decor",
+                    "subCategories": [
+                        "Home Staging",
+                        "Interior Design",
+                        "Muralist",
+                        "Picture Hanging and Art Installation Wallpaper Installation or Repair",
+                        "Wallpaper Removal"
+                    ]
+                },{
+                    "name": "Doors",
+                    "subCategories": [
+                        "Closet and Shelving System Installation",
+                        "Door Installation",
+                        "Door Repair",
+                        "Garage Door Installation or Replacement",
+                        "Garage Door Repair",
+                        "Lock Installation and Repair"
+                    ]
+                },{
+                    "name": "Electrical",
+                    "subCategories": [
+                        "Circuit Breaker Panel or Fuse Box Installation ",
+                        "Circuit Breaker Panel or Fuse Box Repair",
+                        "Electrical and Wiring Repair",
+                        "Fan Installation",
+                        "Generator Installation",
+                        "Generator Repair",
+                        "Smart Home Installation or Repair",
+                        "Solar Panel Installation and Repair",
+                        "Switch and Outlet Installation",
+                        "Switch and Outlet Repair",
+                        "Wiring Installation"
+                    ]
+                },{
+                    "name": "Flooring",
+                    "subCategories": [
+                        "Carpet Installation",
+                        "Carpet Removal",
+                        "Carpet Repair or Partial Replacement",
+                        "Epoxy Floor Coating",
+                        "Floor Installation or Replacement",
+                        "Floor Polishing",
+                        "Floor Repair",
+                        "Hardwood Floor Refinishing"
+                    ]
+                },{
+                    "name": "Furniture",
+                    "subCategories": [
+                        "Fitness Equipment Assembly",
+                        "Furniture Assembly",
+                        "Furniture Delivery",
+                        "Furniture Refinishing",
+                        "Furniture Repair",
+                        "Furniture Upholstery",
+                        "Pool Table Repair Services"
+                    ]
+                },{
+                    "name": "General Contracting",
+                    "subCategories": [
+                        "Construction Services",
+                        "Demolition Services",
+                        "Foundation Repair",
+                        "General Contracting",
+                        "New Home Construction"
+                    ]
+                },{
+                    "name": "Gutters",
+                    "subCategories": [
+                        "Gutter Cleaning and Maintenance",
+                        "Gutter Installation or Replacement",
+                        "Gutter Repair"
+                    ]
+                },{
+                    "name": "Handyman",
+                    "subCategories": [
+                        "Handyman"
+                    ]
+                },{
+                    "name": "Heating & Cooling",
+                    "subCategories": [
+                        "Air Quality and Environmental Testing",
+                        "Central Air Conditioning Installation or Replacement",
+                        "Central Air Conditioning Repair or Maintenance",
+                        "Duct and Vent Cleaning",
+                        "Duct and Vent Installation or Removal",
+                        "Duct and Vent Repair",
+                        "Fireplace and Chimney Cleaning or Repair",
+                        "Fireplace and Chimney Installation",
+                        "Heating System Installation or Replacement",
+                        "Heating System Repair or Maintenance",
+                        "Insulation Installation or Upgrade",
+                        "Thermostat Installation or Repair",
+                        "Window, Wall, or Portable AC Repair or Maintenance"
+                    ]
+                },{
+                    "name": "Home Security",
+                    "subCategories": [
+                        "Home Security System Repair",
+                        "Home Security and Alarms Install"
+                    ]
+                },{
+                    "name": "Home Theater",
+                    "subCategories": [
+                        "Home Theater System Installation or Replacement",
+                        "Home Theater System Repair or Service",
+                        "TV Mounting",
+                        "TV Repair Services"
+                    ]
+                },{
+                    "name": "House Sitting",
+                    "subCategories": [
+                        "House Sitting"
+                    ]
+                },{
+                    "name": "Inspections",
+                    "subCategories": [
+                        "Asbestos Removal",
+                        "Home Inspection",
+                        "Land Surveying",
+                        "Mold Inspection and Removal",
+                        "Pest Inspection",
+                        "Plumbing Inspection",
+                        "Radon Mitigation",
+                        "Roof Inspection",
+                        "Swimming Pool Inspection",
+                        "Termite Inspection"
+                    ]
+                },{
+                    "name": "Landscaping",
+                    "subCategories": [
+                        "Artificial Turf Installation",
+                        "Land Leveling and Grading",
+                        "Outdoor Landscaping and Design",
+                        "Sod Installation",
+                        "Sprinkler and Irrigation System Installation",
+                        "Sprinkler and Irrigation System Repair and Maintenance",
+                        "Water Feature Installation",
+                        "Water Feature Repair and Maintenance"
+                    ]
+                },{
+                    "name": "Lawncare",
+                    "subCategories": [
+                        "Full Service Lawn Care",
+                        "Gardening",
+                        "Lawn Mowing and Trimming",
+                        "Mulching",
+                        "Outdoor Mosquito Control Services",
+                        "Outdoor Pesticide Application",
+                        "Shrub Trimming and Removal",
+                        "Snow Plowing",
+                        "Tree Planting",
+                        "Tree Stump Grinding and Removal",
+                        "Tree Trimming and Removal",
+                        "Weeding"
+                    ]
+                },{
+                    "name": "Material Processing",
+                    "subCategories": [
+                        "Engraving",
+                        "Metalwork",
+                        "Powder Coating"
+                    ]
+                },{
+                    "name": "Moving",
+                    "subCategories": [
+                        "Furniture Moving and Heavy Lifting",
+                        "Hot Tub Moving",
+                        "Local Moving (under 50 miles)",
+                        "Long Distance Moving",
+                        "Office Moving",
+                        "Packing and Unpacking ",
+                        "Piano Moving",
+                        "Pool Table Moving"
+                    ]
+                },{
+                    "name": "Outdoor Structures",
+                    "subCategories": [
+                        "Fence and Gate Installation",
+                        "Fence and Gate Repairs",
+                        "Gazebo Installation and Construction",
+                        "Patio Cover and Awning Services",
+                        "Play Equipment Construction and Assembly",
+                        "Well System Work"
+                    ]
+                },{
+                    "name": "Painting",
+                    "subCategories": [
+                        "Cabinet Painting",
+                        "Deck Staining and Sealing",
+                        "Exterior Painting",
+                        "Faux Finishing or Painting",
+                        "Fence Painting",
+                        "Floor Painting or Coating",
+                        "Interior Painting",
+                        "Paint Removal"
+                    ]
+                },{
+                    "name": "Pest Control",
+                    "subCategories": [
+                        "Bed Bug Extermination",
+                        "Pest Control Services",
+                        "Rodent and Animal Removal",
+                        "Termite Control Services"
+                    ]
+                },{
+                    "name": "Plumbing",
+                    "subCategories": [
+                        "Emergency Plumbing",
+                        "Gas Line Installation",
+                        "Plumbing Drain Repair",
+                        "Plumbing Pipe Installation or Replacement",
+                        "Plumbing Pipe Repair",
+                        "Septic System Installation or Replacement",
+                        "Septic System Repair, Maintenance or Inspection",
+                        "Shower and Bathtub Installation or Replacement",
+                        "Shower and Bathtub Repair",
+                        "Sink or Faucet Installation or Replacement",
+                        "Sink or Faucet Repair",
+                        "Sump Pump Installation or Replacement",
+                        "Toilet Installation or Replacement",
+                        "Toilet Repair",
+                        "Water Heater Installation or Replacement",
+                        "Water Heater Repair or Maintenance",
+                        "Water Treatment Repair or Maintenance",
+                        "Water Treatment System Installation or Replacement"
+                    ]
+                },{
+                    "name": "Pools, Hot Tubs, & Spas",
+                    "subCategories": [
+                        "Above Ground Swimming Pool Installation",
+                        "Hot Tub and Spa Cleaning and Maintenance",
+                        "Hot Tub and Spa Installation",
+                        "Hot Tub and Spa Repair",
+                        "In-Ground Swimming Pool Construction",
+                        "Swimming Pool Cleaning, Maintenance, and Inspection",
+                        "Swimming Pool Removal",
+                        "Swimming Pool Repair"
+                    ]
+                },{
+                    "name": "Property Services",
+                    "subCategories": [
+                        "Property Management",
+                        "Real Estate Agent Services",
+                        "Real Estate Appraisal"
+                    ]
+                },{
+                    "name": "Roofing",
+                    "subCategories": [
+                        "Roof Installation or Replacement",
+                        "Roof Repair or Maintenance"
+                    ]
+                },{
+                    "name": "Siding",
+                    "subCategories": [
+                        
+                    ]
+                },{
+                    "name": "Handyman",
+                    "subCategories": [
+                        "Siding Installation",
+                        "Siding Removal",
+                        "Siding Repair"
+                    ]
+                },{
+                    "name": "Site Preparation",
+                    "subCategories": [
+                        "Excavation Services",
+                        "Home Waterproofing",
+                        "Land Clearing",
+                        "Weatherization"
+                    ]
+                },{
+                    "name": "Tiling",
+                    "subCategories": [
+                        "Tile Installation and Replacement",
+                        "Tile Repair"
+                    ]
+                },{
+                    "name": "Walls, Framing, & Stairs",
+                    "subCategories": [
+                        "Drywall Installation and Hanging",
+                        "Drywall Repair and Texturing",
+                        "Plastering",
+                        "Popcorn Texture Removal",
+                        "Sound Proofing"
+                    ]
+                },{
+                    "name": "Windows",
+                    "subCategories": [
+                        "Screen Installation or Replacement",
+                        "Window Installation",
+                        "Window Repair",
+                        "Window Tinting",
+                        "Window Treatment Installation or Repair"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Events",
+            "categories": [
+                {
+                    "name": "Beauty",
+                    "subCategories": [
+                        "Bridal Stylist",
+                        "Hair Coloring and Highlights",
+                        "Henna Tattooing",
+                        "Wardrobe Consulting",
+                        "Wedding and Event Hair Styling",
+                        "Wedding and Event Makeup"
+                    ]
+                },{
+                    "name": "Crafts",
+                    "subCategories": [
+                        "Alterations, Tailoring, and Clothing Design",
+                        "Custom Airbrushing",
+                        "Embroidery",
+                        "Jewelry Services",
+                        "Portrait Artistry",
+                        "Quilting and Crochet",
+                        "Scrapbooking",
+                        "Songwriting"
+                    ]
+                },{
+                    "name": "Design & Decor",
+                    "subCategories": [
+                        "Balloon Decorations",
+                        "Calligraphy",
+                        "Event Florist",
+                        "Wedding Florist",
+                        "Wedding and Event Decorating",
+                        "Wedding and Event Invitations"
+                    ]
+                },{
+                    "name": "Event Entertainment",
+                    "subCategories": [
+                        "Animal Show Entertainment",
+                        "Balloon Twisting",
+                        "Caricaturing",
+                        "Circus Entertainment",
+                        "Clown Entertainment",
+                        "Comedy Entertainment",
+                        "Costumed Character Entertainment",
+                        "Face Painting",
+                        "Impersonating",
+                        "Magician",
+                        "Motivational Speaking",
+                        "Tarot and Psychic Reader Entertainment",
+                        "Temporary Tattoo Artistry",
+                        "Ventriloquist & Puppet Entertainment"
+                    ]
+                },{
+                    "name": "Event Staff",
+                    "subCategories": [
+                        "Bartending",
+                        "Event Help and Wait Staff",
+                        "Event Security & Bouncer Services",
+                        "Sommelier Services & Lessons",
+                        "Valet Parking"
+                    ]
+                },{
+                    "name": "Food",
+                    "subCategories": [
+                        "Barbecue and Grill Services",
+                        "Candy Buffet Services",
+                        "Food Truck or Cart Services",
+                        "Pastry Chef and Cake Making Services",
+                        "Personal Chef",
+                        "Wedding Cakes",
+                        "Wedding and Event Catering",
+                        "Wine Tastings and Tours"
+                    ]
+                },{
+                    "name": "Music & Dance",
+                    "subCategories": [
+                        "Audio Recording",
+                        "DJ",
+                        "Dance Entertainment",
+                        "MC and Host Services",
+                        "Music Entertainment",
+                        "Singing Telegram",
+                        "Wedding Dance Lessons"
+                    ]
+                },{
+                    "name": "Party Rentals",
+                    "subCategories": [
+                        "AV Equipment Rental for Events",
+                        "Bounce House and Party Inflatables Rental",
+                        "Games and Concession Rental",
+                        "Karaoke Machine Rental",
+                        "Photo Booth Rental",
+                        "Video Booth Rental"
+                    ]
+                },{
+                    "name": "Photography",
+                    "subCategories": [
+                        "Aerial Photography",
+                        "Boudoir Photography",
+                        "Commercial Photography",
+                        "Engagement Photography",
+                        "Headshot Photography",
+                        "Nature Photography",
+                        "Pet Photography",
+                        "Photo Editing, Scanning and Restoration",
+                        "Portrait Photography",
+                        "Real Estate and Architectural Photography",
+                        "Sports Photography",
+                        "Wedding and Event Photography"
+                    ]
+                },{
+                    "name": "Planning",
+                    "subCategories": [
+                        "Event Planning",
+                        "Fishing Trip Guide Services",
+                        "Party Favors",
+                        "Travel Agency Services",
+                        "Wedding Coordination",
+                        "Wedding Officiant",
+                        "Wedding Planning",
+                        "Wedding and Event Venue Rental"
+                    ]
+                },{
+                    "name": "Transportation",
+                    "subCategories": [
+                        "Charter Bus Rental",
+                        "Limousine and Chauffeur Services",
+                        "Party Bus Rental"
+                    ]
+                },{
+                    "name": "Videography",
+                    "subCategories": [
+                        "Video Editing",
+                        "Video Production",
+                        "Video Streaming and Webcasting Services",
+                        "Video Transfer Services",
+                        "Wedding and Event Videography"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wedding",
+            "categories": [{
+                    "name": "Beauty",
+                    "subCategories": [
+                        "Bridal Stylist",
+                        "Hair Coloring and Highlights",
+                        "Henna Tattooing",
+                        "Wardrobe Consulting",
+                        "Wedding and Event Hair Styling",
+                        "Wedding and Event Makeup"
+                    ]
+                },{
+                    "name": "Crafts",
+                    "subCategories": [
+                        "Alterations, Tailoring, and Clothing Design",
+                        "Custom Airbrushing",
+                        "Embroidery",
+                        "Jewelry Services",
+                        "Portrait Artistry",
+                        "Quilting and Crochet",
+                        "Scrapbooking",
+                        "Songwriting"
+                    ]
+                },{
+                    "name": "Design & Decor",
+                    "subCategories": [
+                        "Balloon Decorations",
+                        "Calligraphy",
+                        "Event Florist",
+                        "Wedding Florist",
+                        "Wedding and Event Decorating",
+                        "Wedding and Event Invitations"
+                    ]
+                },{
+                    "name": "Event Entertainment",
+                    "subCategories": [
+                        "Animal Show Entertainment",
+                        "Balloon Twisting",
+                        "Caricaturing",
+                        "Circus Entertainment",
+                        "Clown Entertainment",
+                        "Comedy Entertainment",
+                        "Costumed Character Entertainment",
+                        "Face Painting",
+                        "Impersonating",
+                        "Magician",
+                        "Motivational Speaking",
+                        "Tarot and Psychic Reader Entertainment",
+                        "Temporary Tattoo Artistry",
+                        "Ventriloquist & Puppet Entertainment"
+                    ]
+                },{
+                    "name": "Event Staff",
+                    "subCategories": [
+                        "Bartending",
+                        "Event Help and Wait Staff",
+                        "Event Security & Bouncer Services",
+                        "Sommelier Services & Lessons",
+                        "Valet Parking"
+                    ]
+                },{
+                    "name": "Food",
+                    "subCategories": [
+                        "Barbecue and Grill Services",
+                        "Candy Buffet Services",
+                        "Food Truck or Cart Services",
+                        "Pastry Chef and Cake Making Services",
+                        "Personal Chef",
+                        "Wedding Cakes",
+                        "Wedding and Event Catering",
+                        "Wine Tastings and Tours"
+                    ]
+                },{
+                    "name": "Music & Dance",
+                    "subCategories": [
+                        "Audio Recording",
+                        "DJ",
+                        "Dance Entertainment",
+                        "MC and Host Services",
+                        "Music Entertainment",
+                        "Singing Telegram",
+                        "Wedding Dance Lessons"
+                    ]
+                },{
+                    "name": "Party Rentals",
+                    "subCategories": [
+                        "AV Equipment Rental for Events",
+                        "Bounce House and Party Inflatables Rental",
+                        "Games and Concession Rental",
+                        "Karaoke Machine Rental",
+                        "Photo Booth Rental",
+                        "Video Booth Rental"
+                    ]
+                },{
+                    "name": "Photography",
+                    "subCategories": [
+                        "Aerial Photography",
+                        "Boudoir Photography",
+                        "Commercial Photography",
+                        "Engagement Photography",
+                        "Headshot Photography",
+                        "Nature Photography",
+                        "Pet Photography",
+                        "Photo Editing, Scanning and Restoration",
+                        "Portrait Photography",
+                        "Real Estate and Architectural Photography",
+                        "Sports Photography",
+                        "Wedding and Event Photography"
+                    ]
+                },{
+                    "name": "Planning",
+                    "subCategories": [
+                        "Event Planning",
+                        "Fishing Trip Guide Services",
+                        "Party Favors",
+                        "Travel Agency Services",
+                        "Wedding Coordination",
+                        "Wedding Officiant",
+                        "Wedding Planning",
+                        "Wedding and Event Venue Rental"
+                    ]
+                },{
+                    "name": "Transportation",
+                    "subCategories": [
+                        "Charter Bus Rental",
+                        "Limousine and Chauffeur Services",
+                        "Party Bus Rental"
+                    ]
+                },{
+                    "name": "Videography",
+                    "subCategories": [
+                        "Video Editing",
+                        "Video Production",
+                        "Video Streaming and Webcasting Services",
+                        "Video Transfer Services",
+                        "Wedding and Event Videography" 
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wellness",
+            "categories":[
+                {
+                    "name": "Coaching",
+                    "subCategories": [
+                        "Health and Wellness Coaching",
+                        "Life Coaching",
+                        "Nutritionist"
+                    ]
+                },{
+                    "name": "Counseling",
+                    "subCategories": [
+                        "Family Counseling",
+                        "Hypnotherapy",
+                        "Marriage and Relationship Counseling",
+                        "Spiritual Counseling",
+                        "Therapy and Counseling"
+                    ]
+                },{
+                    "name": "Exercise",
+                    "subCategories": [
+                        "Personal Training",
+                        "Physical Therapy",
+                        "Private Pilates Instruction",
+                        "Private Tai Chi Instruction",
+                        "Private Yoga Instruction"
+                    ]
+                },{
+                    "name": "Spa Services",
+                    "subCategories": [
+                        "Facial Treatments",
+                        "Massage Therapy"
+                    ]
+                },{
+                    "name": "Spiritual Healing",
+                    "subCategories": [
+                        "Alternative Healing",
+                        "Astrology Reading",
+                        "Palm Reading",
+                        "Tarot Card Reading"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "venue",
+            "categories": [
+                {
+                    "name": "venue category",
+                    "subCategories": [
+                        "venue subcategory",
+                        "venue subcategory",
+                        "venue subcategory",
+                        "venue subcategory",
+                        "venue subcategory"
+                    ]
+                }
+            ]
+        }
+    ]
+}

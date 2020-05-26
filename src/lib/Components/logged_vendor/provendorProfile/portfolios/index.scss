@@ -1,0 +1,30 @@
+.vendor-portfolio{
+    .ant-upload.ant-upload-select-picture-card{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .portfolio-card{
+        .ant-card-body{
+            max-height: 97px;
+            overflow: hidden;
+        }
+    }
+}
+
+.ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item, .ant-upload.ant-upload-select-picture-card{
+    width: 142px !important;
+    height: 142px !important
+}
+

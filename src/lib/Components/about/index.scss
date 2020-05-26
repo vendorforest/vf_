@@ -1,0 +1,33 @@
+.content-container {
+    padding-bottom: 50px;
+    .row {
+        margin: 0px;
+    }
+    .title {
+        text-align: center;
+        padding: 80px 0px;
+        .title-font {
+            font-weight: bolder;
+            font-size: 40px;
+        }
+        .subtitle-font {
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+    .content {
+        .content_title {
+            padding: 20px 0px;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        .content_letter {
+            padding:10px 0px;
+            font-size: 16px;
+        }
+        .padding-0 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}

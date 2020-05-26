@@ -1,0 +1,73 @@
+{
+  "extends": ["react-app", "eslint:recommended"],
+  "plugins": ["react", "prettier", "jsx-a11y"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-unused-vars": "warn",
+    "no-undef": "warn",
+    "no-empty": "warn",
+    "no-unused-expressions": "warn",
+    "require-atomic-updates": "warn",
+    "no-restricted-globals": 1,
+    "camelcase": "warn",
+    "for-direction": "warn",
+    "curly": "warn",
+    "arrow-spacing": "warn",
+    "callback-return": "error",
+    // //require require() calls to be placed at top-level module scope
+    "global-require": "warn",
+    "no-mixed-requires": "warn",
+    "no-new-require": "warn",
+    "no-path-concat": "warn",
+    "handle-callback-err": "warn",
+    "no-process-env": "warn",
+    "no-process-exit": "warn",
+    "no-eval": ["error", { "allowIndirect": true }],
+    "no-restricted-modules": [
+      "error",
+      "assert",
+      "buffer",
+      "child_process",
+      "cluster",
+      // "crypto",
+      "dgram",
+      "dns",
+      "domain",
+      "events",
+      "freelist",
+      // "fs",
+      "http",
+      "https",
+      "module",
+      "net",
+      "os",
+      // "path",
+      "punycode",
+      "querystring",
+      "readline",
+      "repl",
+      "smalloc",
+      "stream",
+      "string_decoder",
+      "sys",
+      "timers",
+      "tls",
+      "tracing",
+      "tty",
+      "url",
+      "util",
+      "vm",
+      "zlib"
+    ],
+    "no-sync": "error"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}

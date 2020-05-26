@@ -1,0 +1,26 @@
+.send-invite{
+    position: relative;
+    .content{
+        margin: 2% 0 50px 0;
+        @media screen and (max-width:1200px){
+            margin-top: 80px 0 30px 0;
+        }
+        .invite-details{
+            padding: 40px;
+            @media screen and (max-width:768px){
+                padding: 20px;
+            }
+            
+            .button-primary, .button-white{
+                height: 45px;
+                line-height: 45px;
+                width: 150px;
+                min-width: 150px;
+                flex-grow: 0;
+                @media screen and (max-width:768px){
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+}

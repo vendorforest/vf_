@@ -1,0 +1,30 @@
+.vendor-employees{
+    
+}
+
+.addemployee-stepone{
+    .avatar-uploader {
+        display: inline-block;
+        & > .ant-upload {
+            width: 128px;
+            height: 128px;
+            max-width: 128px;
+            max-height: 128px;
+        }
+    }
+    .ant-input-number{
+        width: 100%;
+    }
+}
+
+.addemployee-steptwo{
+    
+}
+
+.addemployee-stepthree{
+    .ant-input-number{
+        width: 100%;
+    }
+}
+
+

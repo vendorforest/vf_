@@ -1,0 +1,27 @@
+FROM node:10-alpine
+
+ARG NODE_ENV=development
+ENV NODE_ENV=$NODE_ENV
+
+RUN mkdir -p /home/nodejs/app
+WORKDIR /home/nodejs/app
+
+#no npmrc
+#RUN mkdir -p /root/.ssh
+#ADD ~/.ssh/id_rsa /root/.ssh/id_rsa
+#RUN chmod 700 /root/.ssh/id_rsa
+#RUN echo "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
+
+# Install Node.js dependencies
+COPY package.json yarn.lock ./
+
+RUN set -ex; \
+  if [ "$NODE_ENV" = "production" ]; then \
+    yarn install --no-cache --frozen-lockfile --production; \
+        yarn cache clean;       \
+  elif [ "$NODE_ENV" = "development" ]; then \
+    yarn install --no-cache --frozen-lockfile; \
+        yarn cache clean;       \
+  fi;
+
+CMD ["tar", "-czf", "-", "node_modules"]

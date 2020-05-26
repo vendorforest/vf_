@@ -1,0 +1,29 @@
+FROM node:10-alpine
+#FROM alpine:latest
+
+# run as non-root user inside the docker container
+# see https://vimeo.com/171803492 at 17:20 mark
+RUN addgroup -S nodegroup && adduser -S nodejs -G nodegroup
+#RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
+# now run as new user nodejs from group nodejs
+USER nodejs
+
+# Create an app directory (in the Docker container)
+RUN mkdir -p  /home/nodejs/app
+
+RUN chown -R nodejs:nodegroup /home/nodejs/app
+WORKDIR /home/nodejs/app
+ADD node_modules.tar.gz /home/nodejs/app
+COPY . /home/nodejs/app
+
+RUN yarn build
+
+EXPOSE 8081
+
+#To investigate 
+#docker run -it --entrypoint sh vendorforest/demov1.0
+
+ENV NODE_ENV production
+
+CMD [ "yarn", "start" ]

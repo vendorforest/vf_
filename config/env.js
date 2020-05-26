@@ -1,0 +1,131 @@
+const fs = require("fs");
+const path = require("path");
+const paths = require("./paths");
+const dotEnv = require("dotenv");
+const dotEnvExpand = require("dotenv-expand");
+
+// Make sure that including paths.js after env.js will read .env variables.
+delete require.cache[require.resolve("./paths")];
+
+const NODE_ENV = process.env.NODE_ENV;
+if (!NODE_ENV) {
+  throw new Error("The NODE_ENV environment variable is required but was not specified.");
+}
+
+// https://github.com/bkeepers/dotenv#what-other-env-files-can-i-use
+var dotenvFiles = [
+  `${paths.dotenv}.${NODE_ENV}.local`,
+  `${paths.dotenv}.${NODE_ENV}`,
+  // Don't include `.env.local` for `test` environment
+  // since normally you expect tests to produce the same
+  // results for everyone
+  NODE_ENV !== "test" && `${paths.dotenv}.local`,
+  paths.dotenv,
+].filter(Boolean);
+
+// Load environment variables from .env* files. Suppress warnings using silent
+// if this file is missing. dotenv will never modify any environment variables
+// that have already been set.  Variable expansion is supported in .env files.
+// https://github.com/motdotla/dotenv
+// https://github.com/motdotla/dotenv-expand
+dotenvFiles.forEach((dotenvFile) => {
+  if (fs.existsSync(dotenvFile)) {
+    dotEnvExpand(
+      dotEnv.config({
+        path: dotenvFile,
+      }),
+    );
+  }
+});
+
+// We support resolving modules according to `NODE_PATH`.
+// This lets you use absolute paths in imports inside large monorepos:
+// https://github.com/facebook/create-react-app/issues/253.
+// It works similar to `NODE_PATH` in Node itself:
+// https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders
+// Note that unlike in Node, only *relative* paths from `NODE_PATH` are honored.
+// Otherwise, we risk importing Node.js core modules into an app instead of Webpack shims.
+// https://github.com/facebook/create-react-app/issues/1023#issuecomment-265344421
+// We also resolve them to make sure all tools using them work consistently.
+const appDirectory = fs.realpathSync(process.cwd());
+process.env.NODE_PATH = (process.env.NODE_PATH || "")
+  .split(path.delimiter)
+  .filter((folder) => folder && !path.isAbsolute(folder))
+  .map((folder) => path.resolve(appDirectory, folder))
+  .join(path.delimiter);
+
+// Grab NODE_ENV and REACT_APP_* environment variables and prepare them to be
+// injected into the application via DefinePlugin in Webpack configuration.
+const REACT_APP = /^REACT_APP_/i;
+
+function getClientEnvironment(publicUrl) {
+  //console.log(process.env);
+  const raw = Object.keys(process.env)
+    .filter((key) => REACT_APP.test(key))
+    .reduce(
+      (env, key) => {
+        env[key] = process.env[key];
+        return env;
+      },
+      {
+        //if Continuos integration is true, warnings will be treated as erros
+        CI: false,
+        PORT: process.env.PORT,
+        API_URL: process.env.API_URL,
+        DB_CONN: process.env.DB_CONN,
+        SESS_DB: process.env.SESS_DB,
+        SESS_COLLECTION: process.env.SESS_COLLECTION,
+        DATABASE_CONNECTION: process.env.DATABASE_CONNECTION,
+        STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
+        STRIPE_PUBLISHABLE_KEY: process.env.STRIPE_PUBLISHABLE_KEY,
+        STRIPE_CLIENT: process.env.STRIPE_CLIENT,
+        SUPPORT_EMAIL: process.env.SUPPORT_EMAIL,
+        SUPPORT_EMAIL_ID: process.env.SUPPORT_EMAIL_ID,
+        SUPPORT_SECRET: process.env.SUPPORT_SECRET,
+        TWILIO_ACCOUNT_SID: process.env.TWILIO_ACCOUNT_SID,
+        TWILIO_AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN,
+        SERVER_TWILIO_NUMBER: process.env.SERVER_TWILIO_NUMBER,
+        COMET_WEB_PUSH_CONTACT: process.env.COMET_WEB_PUSH_CONTACT,
+        COMET_PUBLIC_VAPID_KEY: process.env.COMET_PUBLIC_VAPID_KEY,
+        COMET_PRIVATE_VAPID_KEY: process.env.COMET_PRIVATE_VAPID_KEY,
+        OAUTH_CLIENT_ID: process.env.OAUTH_CLIENT_ID,
+        OAUTH_SECRET: process.env.OAUTH_SECRET,
+        OAUTH_SCOPE: process.env.OAUTH_SCOPE,
+        OAUTH_REFRESH_TOKEN: process.env.OAUTH_REFRESH_TOKEN,
+        OAUTH_TOKEN: process.env.OAUTH_TOKEN,
+        FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
+        FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
+        FIREBASE_DATABASE_URL: process.env.FIREBASE_DATABASE_URL,
+        FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID,
+        FIREBASE_STORAGE_BUCKET: process.env.FIREBASE_STORAGE_BUCKET,
+        FIREBASE_MESSAGINGSENDER_ID: process.env.FIREBASE_MESSAGINGSENDER_ID,
+        FIREBASE_APP_ID: process.env.FIREBASE_APP_ID,
+        FIREBASE_MEASUREMENT_ID: process.env.FIREBASE_MEASUREMENT_ID,
+        // Useful for determining whether we’re running in production mode.
+        // Most importantly, it switches React into the correct mode.
+        NODE_ENV: process.env.NODE_ENV || "development",
+        // Useful for resolving the correct path to static assets in `public`.
+        // For example, <img src={process.env.PUBLIC_URL + '/img/logo.png'} />.
+        // This should only be used as an escape hatch. Normally you would put
+        // images into the `src` and `import` them in code to get their paths.
+        PUBLIC_URL: publicUrl,
+        API_URL: process.env.API_URL,
+        DOC_ROOT: process.env.DOC_ROOT,
+        CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
+        CLOUDINARY_SECRET_KEY: process.env.CLOUDINARY_SECRET_KEY,
+        CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,   
+        GENERATE_SOURCEMAP: false,
+      },
+    );
+  // Stringify all values so we can feed into Webpack DefinePlugin
+  const stringified = {
+    "process.env": Object.keys(raw).reduce((env, key) => {
+      env[key] = JSON.stringify(raw[key]);
+      return env;
+    }, {}),
+  };
+
+  return { raw, stringified };
+}
+
+module.exports = getClientEnvironment;

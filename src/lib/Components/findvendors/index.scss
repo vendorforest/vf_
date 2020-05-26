@@ -1,0 +1,117 @@
+.find-vendor{
+    padding-top: 70px;
+    position: relative;
+    min-height: 100vh;
+    .content{
+        position: relative;
+        margin: 2% 0 50px 0;
+        @media screen and (max-width:768px){
+            margin: 100px 0 30px 0;
+        }
+        .filter{
+            padding: 0;
+            @media screen and (max-width:768px){
+                box-shadow: 0 1px 3px rgba(57,73,76,.35);
+                padding: 10px;
+                background-color: white;
+            }
+            .less{
+                text-decoration: underline;
+                cursor: pointer;
+                padding-left: 20px;
+            }
+            .ant-checkbox-group{
+                label{
+                    display: block;
+                }
+            }
+        }
+        .search-bar{
+            input, button{
+                height: 45px;
+            }
+        }
+        .vendor-list{
+            box-shadow: 0 1px 3px rgba(57,73,76,.35);
+            padding-bottom: 30px;
+            background-color: white;
+            .vendor-item{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 15px;
+                @media screen and (max-width:768px){
+                    display: block;
+                    h5{
+                        font-size: 16px;
+                    }
+                }
+                .vendor-info{
+                    .vendor-photo{
+                        width: 80px;
+                        height: 80px;
+                    }
+                    .vendor-summary{
+                        .job-progress{
+                            width: 150px;
+                            display:block;
+                            .ant-progress-inner{
+                                background-color: #d5d4d4;
+                            }
+                        }
+                        .vendor-name{
+                            &:hover{
+                                color: #07b107;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .anticon{
+                        vertical-align: 0.1rem
+                    }
+                    .ant-rate{
+                        font-size: 15px;
+                        svg{
+                            width: 15px
+                        } 
+                    }
+                    
+                }
+                .button-primary, .button-white{
+                    height: 45px;
+                    line-height: 45px;
+                    width: 150px;
+                    min-width: 150px;
+                    flex-grow: 0;
+                    @media screen and (max-width:768px){
+                        flex-grow: 1;
+                    }
+                }
+                .vendor-action{
+                    flex-basis: 110px;
+                }
+            }
+        }
+    }
+}
+
+.send-invite{
+    .content{
+        margin: 2% 0 50px 0;
+        @media screen and (max-width:1200px){
+            margin-top: 80px 0 30px 0;
+        }
+        .invite-details{
+            padding: 40px;
+            @media screen and (max-width:768px){
+                padding: 20px;
+            }
+        }
+    }
+}
+
+.ant-list-items {
+    padding-inline-start: 0%;
+}
+.ant-pagination {
+    padding-right: 15px,
+}

@@ -1,0 +1,19 @@
+.login-section{
+
+    padding-top: 70px;
+    
+    .content{
+        margin: 5% 0 5% 0;
+        height: 100%;
+        .form-content{
+            padding: 50px 100px;
+            @media screen and (max-width:768px){
+                padding: 30px;
+            }
+        }
+        .button-primary{
+            height: 45px;
+            line-height: 45px;
+        }
+    }
+}

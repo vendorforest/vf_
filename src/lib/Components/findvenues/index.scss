@@ -1,0 +1,106 @@
+.find-venue{
+    .content{
+        margin: 150px 0 50px 0;
+        @media screen and (max-width:768px){
+            margin: 100px 0 30px 0;
+        }
+        .filter{
+            padding: 0;
+            @media screen and (max-width:768px){
+                box-shadow: 0 1px 3px rgba(57,73,76,.35);
+                padding: 10px;
+                background-color: white;
+            }
+            .less{
+                text-decoration: underline;
+                cursor: pointer;
+                padding-left: 20px;
+            }
+            .ant-checkbox-group{
+                label{
+                    display: block;
+                }
+            }
+        }
+        .search-bar{
+            input, button{
+                height: 45px;
+            }
+        }
+        .venue-list{
+            box-shadow: 0 1px 3px rgba(57,73,76,.35);
+            padding-bottom: 30px;
+            background-color: white;
+            .venue-item{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 15px;
+                @media screen and (max-width:768px){
+                    display: block;
+                    h5{
+                        font-size: 16px;
+                    }                
+                    .venue-summary{
+                        margin-bottom: 10px;
+                    }
+                }
+                .venue-photo{
+                    width: 165px;
+                    min-width: 165px;
+                    display:flex;
+                    justify-content: center;
+                    align-content: center;
+                    span{
+                        display: block
+                    }
+                    @media screen and (max-width:768px){
+                        width: 100%;
+                    }
+                }
+                .venue-summary{
+                    .venue-name{
+                        &:hover{
+                            color: #07b107;
+                            text-decoration: underline
+                        }
+                    }
+                    .color-gray{
+                        color: #888;
+                    }
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    .anticon{
+                        vertical-align: 0.1rem
+                    }
+                    .ant-rate{
+                        font-size: 15px;
+                        svg{
+                            width: 15px
+                        } 
+                    }
+                    .button-primary, .button-white{
+                        height: 45px;
+                        line-height: 45px;
+                        width: 150px;
+                        min-width: 150px;
+                        flex-grow: 0;
+                        @media screen and (max-width:768px){
+                            flex-grow: 1;
+                        }
+                    }
+                }
+                .venue-action{
+                    flex-basis: 110px;
+                }
+            }
+        }
+    }
+}
+
+.vendor-sendrequest{
+    .ant-checkbox-group{
+        label{
+            display: block;
+        }
+    }
+}

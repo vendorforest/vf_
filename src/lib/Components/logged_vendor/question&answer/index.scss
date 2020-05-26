@@ -1,0 +1,99 @@
+.job-details{
+    padding-top: 70px;
+    .content{
+        margin: 2% 0 50px 0;
+        min-height: 500px;
+        @media screen and (max-width:1200px){
+            margin-top: 80px 0 30px 0;
+        }
+        .client-job-content{
+            .edit-btn-content{
+                display: block;
+                a.button-primary, a.button-white{
+                    flex-grow: unset;
+                    flex-basis: unset;
+                    height: 45px;
+                    line-height: 45px;
+                    border-radius: 5px;
+                    width: 150px !important;
+                    @media screen and (max-width:768px){
+                        width: 500% !important;
+                    }
+                }
+            }
+        }
+        
+        .propposal-item{
+            .vendor-profile-content{
+                .photo{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .vendor-rate{
+                .job-progress{
+                    width: 150px;
+                    display:block;
+                    .ant-progress-inner{
+                        background-color: #d5d4d4;
+                    }
+                }
+                .like-rate{
+                    color: #07b107;
+                    svg{
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-drawer-content-wrapper{
+    width: 640px !important;
+    @media screen and (max-width:768px){
+        width: 100% !important;
+    }
+    .proposal_details{
+        .vendor-content{
+            .vendor-status{
+                .job-progress{
+                    max-width: 170px;
+                }
+            }
+        }
+        .like-rate{
+            color: #07b107;
+            svg{
+                width: 10px;
+            }
+        }
+    }
+}
+
+.add-mstbtn{
+    height: 40px;
+    width: 100% !important;
+    margin-top: 39px;
+    @media screen and (max-width:768px){
+        margin-top: 0;
+    }
+}
+
+.controls{
+    .button-primary, .button-white{
+        height: 45px;
+        line-height: 45px;
+        border-radius: 5px;
+        width: 150px;
+        min-width: 150px;
+        flex-grow: 0;
+        @media screen and (max-width: 768px){
+            width: 50% !important;
+        }
+    }
+}
+
+ul.ant-list-items {
+    padding-left: 0px;
+}

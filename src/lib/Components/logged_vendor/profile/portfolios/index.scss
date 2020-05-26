@@ -1,0 +1,110 @@
+.vendor-portfolio{
+    
+    .upload-ctrls{
+        button{
+            @media screen and (max-width: 500px){
+                width: 50%;
+            }
+        }
+    }
+    .portfolio-item{
+       width: 100%;
+       margin-bottom: 30px;
+       position: relative;
+       cursor: pointer;
+       img{
+           width: 100%;
+       }
+       .mask{
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%);
+           width: 0;
+           height: 0;
+           transition: all;
+           transition-duration: 0.5s;
+           background-color: rgba($color: #000000, $alpha: 0.3);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: white;
+           font-size: 0rem;
+       }
+       .playicon{
+           position: absolute;
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: 3rem;
+           color: white;
+       }
+       &:hover{
+            .mask{
+                width: 100%;
+                height: 100%;
+                font-size: 3rem;
+                transition: all;
+                transition-duration: 0.5s;
+            }
+       }
+
+    }
+}
+
+.ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item, .ant-upload.ant-upload-select-picture-card{
+    width: 142px !important;
+    height: 142px !important
+}
+
+.crop{
+    img{
+        min-height: 500px;
+    }
+}
+
+.cousel-view{
+
+    position: relative;
+
+    .video-loading{
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: white;
+    }
+
+    img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.cousel-header{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: auto;
+    font-size: 2rem;
+    color: white
+}

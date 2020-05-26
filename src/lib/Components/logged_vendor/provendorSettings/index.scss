@@ -1,0 +1,104 @@
+.provendor-settings{
+    margin: 2% 0 50px 0;
+    padding-top: 70px;
+    display: flex;
+    @media screen and (max-width:1200px){
+        margin-top: 100px;
+        display: block;
+    }   
+    .side-section{
+        min-width: 200px;
+        position: relative;
+        height: 100%;
+        .content{
+            ul{
+                display: block;
+                @media screen and (max-width:1200px){
+                    display: none;
+                }
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li{
+                    color: #555555;
+                    padding: 8px 0;
+                    font-size: 16px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #07b107;
+                    }
+                    &.active{
+                        color: #07b107;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .select-menu{
+                display: none;
+                @media screen and (max-width:1200px){
+                    display: block;
+                    padding: 50px 0 30px 0;
+                }
+                @media screen and (max-width:1000px){
+                    display: block;
+                    padding: 20px 0 30px 0;
+                }
+                @media screen and (max-width:768px){
+                    display: block;
+                    padding: 0px 0 30px 0;
+                }
+            }
+        }
+    }
+    .detail-section{
+        flex-grow: 1;
+    }
+}
+
+.provendor-security, .provendor-notification, .provendor-billingmethod, .provendor-companyinfo, .provendor-team{
+    .button-primary{
+        margin: 0 !important;
+        height: 45px;
+        line-height: 45px;
+        width: 150px;
+        min-width: 150px;
+        flex-grow: 0;
+    }
+    .ant-checkbox-group{
+        label{
+            display: block;
+        }
+    }
+}
+
+.provendor-companyinfo{
+    .ant-upload.ant-upload-select-picture-card{
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.provendor-billingmethod{
+    .paypal-content{
+        .button-white{
+            height: 45px;
+            line-height: 45px;
+            width: 200px;
+            min-width: 200px;
+            flex-grow: 0;
+        }
+    }
+}
+
+.add-teams{
+    .add-btn{
+        button{
+            margin: 0;
+            margin-top: 50px !important;
+            width: 100%;
+            @media screen and (max-width: 768px){
+                margin: 10px 0 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.venue-details{
+    .content{
+        margin: 150px 0 50px 0;
+        @media screen and (max-width:768px){
+            margin: 100px 0 30px 0;
+        }
+        ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.venue-carousel{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .ant-checkbox-group{
+            label{
+                display: block;
+            }
+        }
+        .button-primary, .button-white{
+            height: 45px;
+            line-height: 45px;
+            width: 150px;
+            min-width: 150px;
+            flex-grow: 0;
+            @media screen and (max-width:768px){
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+.vendor-sendrequest{
+    .ant-checkbox-group{
+        label{
+            display: block;
+        }
+    }
+}

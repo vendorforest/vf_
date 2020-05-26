@@ -1,0 +1,35 @@
+image: node:10.15.3
+
+pipelines:
+  default:
+    - step:
+        name: Build and test
+        caches:
+          - node
+        script:
+          - yarn install 
+          #- yarn test
+          - CI=false yarn build
+        artifacts:
+          - dist/**
+          - Dockerfile
+          - package.json
+    - step:
+        name: Deploy artifacts using SCP to STAG
+        deployment: staging
+        script:
+          - pipe: atlassian/scp-deploy:0.3.3
+            variables:
+              USER: $SSH_USER
+              SERVER: $SERVER
+              REMOTE_PATH: '~/dist'
+              LOCAL_PATH: 'dist/*'
+    - step:
+        name: Deploy artifacts to docker in server
+        script:
+          - pipe: atlassian/ssh-run:0.2.2
+            variables:
+                SSH_USER: $SSH_USER
+                SERVER: $SERVER
+                MODE: 'command'
+                COMMAND: 'deploy.sh' 

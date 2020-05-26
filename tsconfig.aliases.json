@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@*": ["*"],
+      //frontend Routes
+      "@Components/*": ["lib/Components/*"],
+      "@Sass/*": ["lib/Components/sass/*"],
+      //shared Routes
+      "@Shared/*": ["lib/*"],
+      //backend routes
+      "@Controllers/*": ["server/controllers/*"],
+      "@Models/*": ["server/models/*"],
+      "@Routes/*": ["server/routes/*"],
+      "@Utils/*": ["server/utils/*"],
+      "@Config/*": ["server/config/*"]
+    }
+  }
+}

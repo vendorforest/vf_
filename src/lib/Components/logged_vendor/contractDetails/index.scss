@@ -1,0 +1,119 @@
+.contract-details{
+    
+    padding-top: 70px;
+    .content{
+        margin: 2% 0 50px 0;
+        min-height: 500px;
+        @media screen and (max-width:1200px){
+            margin-top: 80px 0 30px 0;
+        }
+        .content-details{
+            .head{
+                background-color: #f8f8f8;
+                padding: 20px;
+                .user{
+                    display: flex;
+                    .photo{
+                        margin-right: 10px;
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                .job-progress{
+                    width: 200px;
+                    margin: 0 auto;
+                    .ant-slider-rail{
+                        background-color: #cdcdcd;
+                    }
+                    .ant-slider-track{
+                        background-color: #07b107;
+                    }
+                    .ant-slider-handle{
+                        border-color: #07b107;
+                    }
+                }
+                .status{
+                    .button-primary, .button-white{
+                        margin-bottom: 10px;
+                        @media screen and (max-width: 768px){
+                            width: 100%;    
+                        }
+                        width: 150px;
+                        height: 35px;
+                        border-radius: 0;
+                        line-height: 35px;
+                    }
+                }
+            }
+
+            .main-content{
+                padding: 20px;
+                .milestone-list-content{
+                    .add-milestone{
+                        label{
+                            margin-bottom: 0;
+                        }
+                        .ms-descrption, .ms-price{
+                            flex-grow: 1;
+                            .ant-form-item{
+                                margin: 0;
+                            }
+                            input{
+                                height: 40px;
+                            }
+                        }
+                    }
+                    .milestone-list{
+
+                    }
+                    .button-primary{
+                        height: 40px;
+                        line-height: 40px;
+                        width: 150px;
+                        flex-grow: 0;
+                        @media screen and (max-width:768px){
+                            width: 100%;
+                            flex-grow: 1;
+                        }
+                    }
+                }
+
+                .attachment-file{
+                    .images{
+                        .images-content{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            img{
+                                flex-basis: 100px;
+                                width: 100px;
+                                margin: 10px;
+                            }
+                        }
+                    }
+                    .videos{
+                        .videos-content{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            .video-placeimg{
+                                flex-basis: 100px;
+                                width: 100px;
+                                margin: 10px;
+                                position: relative;
+                                .video-icon{
+                                    font-size: 40px;
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 50%;
+                                    transform: translate(-50%, -50%);
+                                    color: rgba(255, 255, 255, 0.5)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
